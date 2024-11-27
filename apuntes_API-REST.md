@@ -23,7 +23,7 @@
 - ### En el apartado `"scripts"`, agregar el comando personalizado para la ejecución del proyecto.
   ```json
     "scripts": {
-    "start": "node src/server.js", // En la terminal, utilizar npm start
+      "start": "node src/server.js", // En la terminal, utilizar npm start
     }
   ```
 
