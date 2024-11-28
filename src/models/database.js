@@ -1,6 +1,6 @@
 import sqlite3 from "sqlite3";
 
-import { DATABASE_PATH } from "../config/config";
+import { DATABASE_PATH } from "../config/config.js";
 
 const db = new sqlite3.Database(DATABASE_PATH, (err) => {
   if (err) {
@@ -14,7 +14,7 @@ const db = new sqlite3.Database(DATABASE_PATH, (err) => {
     db.run(`CREATE TABLE IF NOT EXISTS clientes(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nombre TEXT NOT NULL,
-        email TEXT NOT NULL UNIQUE,
+        email TEXT NOT NULL UNIQUE
         )`);
 
     db.run(`

@@ -1,6 +1,6 @@
-import express from "express";
-import { PORT } from "./config/config.js";
-
+import express from 'express';
+import { PORT } from './config/config.js';
+import clientesRoutes from './routes/clientesRoutes.js'
 // crear aplicacion de tipo express
 const app = express();
 
@@ -9,7 +9,7 @@ app.use(express.json());
 
 // establecer rutas 
 app.use("/api/clientes",  clientesRoutes); // <-- lo que el usuario tiene que poner en el navegador "localhost:3000/api/clientes"
-app.use("/api/reservas",  reservasRoutes);
+//app.use("/api/reservas",  reservasRoutes);
 
 
 // arrancar el servidor
